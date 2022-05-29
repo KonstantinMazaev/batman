@@ -7,16 +7,17 @@
     <link rel="icon" href="">
     <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Batman</title>
+    <title></title>
   </head>
   <body> 
     <header class="header">
       <button class="burger"><span class="line"></span><span class="line"></span><span class="line"></span></button>
       <nav class="header__nav nav">
         <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link nav__link--active">Главная</a></li>
-          <li class="nav__item"><a class="nav__link" href="video.html">Видео</a></li>
+          <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+          <li class="nav__item"><a class="nav__link active">Видео</a></li>
           <li class="nav__item"><a class="nav__link" href="photo.html">Фото</a></li>
         </ul>
         <p class="header__hashtag">#TheBatman</p>
@@ -40,7 +41,68 @@
         <label class="mute__label" for="mute"></label>
       </div>
     </header>
-    <main class="main main__index"><img class="logo" src="img/logo.png" alt="Логотип к фильму Бэтмен"></main>
+    <main class="main main_slider">
+      <div class="slider-main swiper">
+        <ul class="slider-main__list swiper-wrapper">
+          <li class="slider-main__item swiper-slide">
+            <video class="slider-main__video" controls poster="img/video/trailer01.jpg">
+              <source src="img/video/trailer01.webm" type="video/webm">
+              <source src="img/video/trailer01.mp4" type="video/mp4">
+            </video>
+          </li>
+          <li class="slider-main__item swiper-slide">
+            <video class="slider-main__video" controls poster="img/video/trailer02.jpg">
+              <source src="img/video/trailer02.webm" type="video/webm">
+              <source src="img/video/trailer02.mp4" type="video/mp4">
+            </video>
+          </li>
+          <li class="slider-main__item swiper-slide">
+            <video class="slider-main__video" controls poster="img/video/trailer03.jpg">
+              <source src="img/video/trailer03.webm" type="video/webm">
+              <source src="img/video/trailer03.mp4" type="video/mp4">
+            </video>
+          </li>
+          <li class="slider-main__item swiper-slide">
+            <video class="slider-main__video" controls poster="img/video/tizer01.jpg">
+              <source src="img/video/tizer01.webm" type="video/webm">
+              <source src="img/video/tizer01.mp4" type="video/mp4">
+            </video>
+          </li>
+          <li class="slider-main__item swiper-slide">
+            <video class="slider-main__video" controls poster="img/video/tizer02.jpg">
+              <source src="img/video/tizer02.webm" type="video/webm">
+              <source src="img/video/tizer02.mp4" type="video/mp4">
+            </video>
+          </li>
+          <li class="slider-main__item swiper-slide">
+            <video class="slider-main__video" controls poster="img/video/tizer03.jpg">
+              <source src="img/video/tizer03.webm" type="video/webm">
+              <source src="img/video/tizer03.mp4" type="video/mp4">
+            </video>
+          </li>
+          <li class="slider-main__item swiper-slide">
+            <video class="slider-main__video" controls poster="img/video/tizer04.jpg">
+              <source src="img/video/tizer04.webm" type="video/webm">
+              <source src="img/video/tizer04.mp4" type="video/mp4">
+            </video>
+          </li>
+        </ul>
+      </div>
+      <div class="pagination">
+        <button class="pagination__array"></button>
+        <div class="slider-thumbs swiper">
+          <ul class="slider-thumbs__list swiper-wrapper">
+            <li class="slider-thumbs__item swiper-slide"><img class="slider-thumbs__img" src="img/video/trailer01.jpg" alt="Превью Фото"></li>
+            <li class="slider-thumbs__item swiper-slide"><img class="slider-thumbs__img" src="img/video/trailer02.jpg" alt="Превью Фото"></li>
+            <li class="slider-thumbs__item swiper-slide"><img class="slider-thumbs__img" src="img/video/trailer03.jpg" alt="Превью Фото"></li>
+            <li class="slider-thumbs__item swiper-slide"><img class="slider-thumbs__img" src="img/video/tizer01.jpg" alt="Превью Фото"></li>
+            <li class="slider-thumbs__item swiper-slide"><img class="slider-thumbs__img" src="img/video/tizer02.jpg" alt="Превью Фото"></li>
+            <li class="slider-thumbs__item swiper-slide"><img class="slider-thumbs__img" src="img/video/tizer03.jpg" alt="Превью Фото"></li>
+            <li class="slider-thumbs__item swiper-slide"><img class="slider-thumbs__img" src="img/video/tizer04.jpg" alt="Превью Фото"></li>
+          </ul>
+        </div>
+      </div>
+    </main>
     <footer class="footer">
       <ul class="footer__links">
         <li><a class="footer__link" href="#">Политика конфиденциальности</a></li>
@@ -50,6 +112,7 @@
       </ul>
       <p class="footer__copyright">© 2022 WBEI TM & © DC</p>
     </footer>
-    <script src="js/script.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
